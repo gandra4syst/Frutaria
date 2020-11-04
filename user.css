@@ -1,0 +1,116 @@
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+section .img-caixa{
+    position: relative;
+    width: 50%;
+    height: 100vh;
+}
+
+section .img-caixa img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section .img-caixa:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(225deg, #CD0000, #cad1d1);
+    z-index: 1;
+    mix-blend-mode: screen;
+}
+
+section .conteudo-caixa{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+section .conteudo-caixa .form1{
+    width: 50%;
+}
+
+section .conteudo-caixa .form1 h2{
+    color: #CD0000;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+section .conteudo-caixa .form1 .inputbox{
+    margin-bottom: 20px;
+}
+
+section .conteudo-caixa .form1 .inputbox span{
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 300;
+    display: inline-block;
+    letter-spacing: 1px;
+    color: #607db8;
+}
+
+section .conteudo-caixa .form1 .inputbox input{
+   width: 100%;
+   padding: 10px 20px;
+   border: 1px solid #607db8;
+   border-radius: 25px;
+   outline: none;
+   background: transparent;
+   font-weight: 400;
+}
+
+section .conteudo-caixa .form1 .inputbox input[type="submit"]{
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid #607db8;
+    font-weight: 500;
+    margin-top: 5px;
+    transition: 1s;
+ }
+
+ section .conteudo-caixa .form1 .inputbox input[type="submit"]:hover{
+    background: #CD0000;
+    color: #FFF;
+ }
+
+ section .conteudo-caixa .form1 .inputbox p a{
+    color: #CD0000;
+    text-decoration: none;
+    font-weight: 600;
+ }
+
+ h4{
+     margin: 20px 0;
+     font-weight: 100;
+ }
+
+ .social{
+    width: 200px;
+    text-align: center;
+    opacity: .5;
+}
+
+.social img{
+    height: 20px;
+    margin: 0 14px;
+    transition: .6s;
+}
+
+ .social img:hover{
+    transform: scale(1.7);
+}

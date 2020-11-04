@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+}
+
+.hero{
+    width: 80%;
+    margin: auto;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    margin: 30px auto;
+}
+
+.logo{
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo a{
+    text-decoration: none;
+}
+
+.logo a .logotipo{
+    color: #CD0000;
+    font-size: 1.5em;
+}
+
+.logo a .logotipo span{
+    color: #333;
+}
+
+ul{
+    flex: 1;
+    text-align: right;
+}
+
+ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 25px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #333;
+    padding: 0 10px;
+    position: relative;
+}
+
+ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #CD0000;
+    position: absolute;
+    left: 50%;
+    top: -40%;
+    transform: translateX(-50%);
+    transition: .5s;
+}
+
+ul li a:hover::after{
+    width: 100%;
+}
+
+.navbar-icons{
+    margin-left: 40px;
+}
+
+.navbar-icons img{
+    height: 25px;
+    margin-left: 40px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.navbar-icons img:hover{
+    transform: scale(1.2);
+    background: #CD0000;
+    padding: 5px;
+    border-radius: 20%;
+}
+
+.banner{
+    margin-top: 40px;
+    display: flex;
+}
+
+.col-esq, .col-dta{
+    flex-basis: 50%;
+}
+
+.col-dta img{
+    width: 100%;
+}
+
+.search-box{
+    width: 45%;
+    display: flex;
+    padding-bottom: 3px;
+    margin: 10px 30px 30px;
+    border-bottom: 1px solid #DDD;
+}
+
+.search-box img{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.search-box input{
+    width: 100%;
+    margin-left: 15px;
+    font-size: 17px;
+    border: 0;
+    outline: none;
+}
+
+.col-esq h1{
+    color: #333;
+    font-size: 3em;
+}
+
+.col-esq h1 span{
+    color: #CD0000;
+}
+
+.col-esq h3{
+    font-size: 1.5em;
+    color: #333;
+    font-weight: 500;
+}
+
+.col-esq p{
+   margin: 50px 0;
+   width: 380px;
+}
+
+.col-esq .btn button{
+    padding: 7px 20px;
+    margin-bottom: 60px;
+    font-size: 1em;
+    font-weight: 500;
+    outline: none;
+    border: 1px solid #333;
+    border-radius: 50px;
+    cursor: pointer;
+    background: transparent;
+    box-shadow: 0 2px 15px rgba(27, 27, 27, 0.5);
+    transition: .8s;
+}
+
+.col-esq .btn button:hover{
+    background: #333;
+    color: #FFF;
+}
+
+.col-esq .social{
+    width: 200px;
+    text-align: center;
+    opacity: .5;
+}
+
+.col-esq .social img{
+    height: 20px;
+    margin: 0 14px;
+    transition: .6s;
+}
+
+.col-esq .social img:hover{
+    transform: scale(1.7);
+}
+
+#contato{
+    width: 100%;
+    height: 50vh;
+    background: #333;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+footer{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+footer .box{
+    width: 30%;
+    height: 30vh;
+    padding: 10px;
+}
+
+footer .acerca h3, footer .endereco h3{
+    color: #FFF;
+    margin-bottom: 10px;
+}
+
+footer .formulario h3{
+    margin-bottom: 10px;
+    color: #FFF;
+}
+
+footer .formulario input,
+footer .formulario textarea{
+    width: 100%;
+    padding: 3x;
+    margin: 3px 0;
+}
+
+footer .formulario .btn{
+    width: 100px;
+    position: relative;
+    left: 30%;
+    padding: 5px;
+    border: none;
+    border-radius: 50px;
+    box-shadow:  3px 3px 2px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: 1s;
+}
+
+footer .formulario .btn:hover{
+    background: #CD0000;
+    color: #FFF;
+}
+
+.rodape{
+    color: #FFF;
+    text-align: center;
+    font-size: .8em;
+    font-weight: lighter;
+}
+
+
